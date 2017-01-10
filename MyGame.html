@@ -209,7 +209,7 @@ var observe;
                     newScene.activeCamera);
 			observe = newScene.onBeforeRenderObservable.add(function(){		
         if (pickResult.hit) {
-alert('fine');
+//alert('fine');
 
    
            pickResult.pickedMesh.visibility = 0;
@@ -223,11 +223,6 @@ over.innerHTML ="you need some ammo!.."
 pickResult.hit = false;
 }
 	});
-var impact = BABYLON.Mesh.CreatePlane("impact", 4, newScene);
-    impact.isPickable = true;
-if(armor.intersectsMesh(impact)){
-score += 8;
-}
 }
 
  
